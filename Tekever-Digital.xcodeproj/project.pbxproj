@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4483A49625902B98283DC1B7 /* Pods_Tekever_DigitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BEA98F2D86D5FF398F5158 /* Pods_Tekever_DigitalTests.framework */; };
+		7AA69FCE603BE8D298F2D6CB /* Pods_Tekever_DigitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6AC98606A3059CB61F9FB2 /* Pods_Tekever_DigitalUITests.framework */; };
 		E8AFD183234403B100BB648B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD182234403B100BB648B /* AppDelegate.m */; };
 		E8AFD186234403B100BB648B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD185234403B100BB648B /* ViewController.m */; };
 		E8AFD189234403B100BB648B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AFD187234403B100BB648B /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		E8AFD191234403B300BB648B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD190234403B300BB648B /* main.m */; };
 		E8AFD19B234403B300BB648B /* Tekever_DigitalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD19A234403B300BB648B /* Tekever_DigitalTests.m */; };
 		E8AFD1A6234403B300BB648B /* Tekever_DigitalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1A5234403B300BB648B /* Tekever_DigitalUITests.m */; };
+		E8AFD1B82344110E00BB648B /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1B72344110E00BB648B /* APIClient.m */; };
+		E8AFD1BB234411D000BB648B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1BA234411D000BB648B /* Person.m */; };
+		EC8FDC3BCF393BE43E879967 /* Pods_Tekever_Digital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339BFF1ABDD964BD43A02935 /* Pods_Tekever_Digital.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		339BFF1ABDD964BD43A02935 /* Pods_Tekever_Digital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tekever_Digital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6AC98606A3059CB61F9FB2 /* Pods_Tekever_DigitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tekever_DigitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		624D9FFD4D1979C7A64AD43E /* Pods-Tekever-DigitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tekever-DigitalTests.debug.xcconfig"; path = "Target Support Files/Pods-Tekever-DigitalTests/Pods-Tekever-DigitalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63FDC62BAA5AB79BFD1EE8DB /* Pods-Tekever-DigitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tekever-DigitalUITests.release.xcconfig"; path = "Target Support Files/Pods-Tekever-DigitalUITests/Pods-Tekever-DigitalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		730888FC9DBD1F04DA03A1CE /* Pods-Tekever-DigitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tekever-DigitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tekever-DigitalUITests/Pods-Tekever-DigitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DFDE8EF9629B04C5E76CB96 /* Pods-Tekever-Digital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tekever-Digital.debug.xcconfig"; path = "Target Support Files/Pods-Tekever-Digital/Pods-Tekever-Digital.debug.xcconfig"; sourceTree = "<group>"; };
+		B2BEA98F2D86D5FF398F5158 /* Pods_Tekever_DigitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tekever_DigitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00ACD083763F6E1E01E77EE /* Pods-Tekever-DigitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tekever-DigitalTests.release.xcconfig"; path = "Target Support Files/Pods-Tekever-DigitalTests/Pods-Tekever-DigitalTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8AFD17E234403B100BB648B /* Tekever-Digital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tekever-Digital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AFD181234403B100BB648B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8AFD182234403B100BB648B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +64,11 @@
 		E8AFD1A1234403B300BB648B /* Tekever-DigitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tekever-DigitalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AFD1A5234403B300BB648B /* Tekever_DigitalUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tekever_DigitalUITests.m; sourceTree = "<group>"; };
 		E8AFD1A7234403B300BB648B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8AFD1B62344110E00BB648B /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		E8AFD1B72344110E00BB648B /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		E8AFD1B9234411D000BB648B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E8AFD1BA234411D000BB648B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EACD253ED6155D6A2CDFB00B /* Pods-Tekever-Digital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tekever-Digital.release.xcconfig"; path = "Target Support Files/Pods-Tekever-Digital/Pods-Tekever-Digital.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8FDC3BCF393BE43E879967 /* Pods_Tekever_Digital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4483A49625902B98283DC1B7 /* Pods_Tekever_DigitalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA69FCE603BE8D298F2D6CB /* Pods_Tekever_DigitalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E5F5B216A311C56CED97315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				339BFF1ABDD964BD43A02935 /* Pods_Tekever_Digital.framework */,
+				B2BEA98F2D86D5FF398F5158 /* Pods_Tekever_DigitalTests.framework */,
+				3C6AC98606A3059CB61F9FB2 /* Pods_Tekever_DigitalUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		452E4F3264497D548D94ECC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DFDE8EF9629B04C5E76CB96 /* Pods-Tekever-Digital.debug.xcconfig */,
+				EACD253ED6155D6A2CDFB00B /* Pods-Tekever-Digital.release.xcconfig */,
+				624D9FFD4D1979C7A64AD43E /* Pods-Tekever-DigitalTests.debug.xcconfig */,
+				C00ACD083763F6E1E01E77EE /* Pods-Tekever-DigitalTests.release.xcconfig */,
+				730888FC9DBD1F04DA03A1CE /* Pods-Tekever-DigitalUITests.debug.xcconfig */,
+				63FDC62BAA5AB79BFD1EE8DB /* Pods-Tekever-DigitalUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E8AFD175234403B100BB648B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +129,8 @@
 				E8AFD199234403B300BB648B /* Tekever-DigitalTests */,
 				E8AFD1A4234403B300BB648B /* Tekever-DigitalUITests */,
 				E8AFD17F234403B100BB648B /* Products */,
+				452E4F3264497D548D94ECC5 /* Pods */,
+				1E5F5B216A311C56CED97315 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +147,11 @@
 		E8AFD180234403B100BB648B /* Tekever-Digital */ = {
 			isa = PBXGroup;
 			children = (
+				E8AFD1B5234410A800BB648B /* Models */,
+				E8AFD1B4234410A200BB648B /* Network */,
+				E8AFD1B32344106C00BB648B /* Controllers */,
 				E8AFD181234403B100BB648B /* AppDelegate.h */,
 				E8AFD182234403B100BB648B /* AppDelegate.m */,
-				E8AFD184234403B100BB648B /* ViewController.h */,
-				E8AFD185234403B100BB648B /* ViewController.m */,
 				E8AFD187234403B100BB648B /* Main.storyboard */,
 				E8AFD18A234403B300BB648B /* Assets.xcassets */,
 				E8AFD18C234403B300BB648B /* LaunchScreen.storyboard */,
@@ -132,6 +179,33 @@
 			path = "Tekever-DigitalUITests";
 			sourceTree = "<group>";
 		};
+		E8AFD1B32344106C00BB648B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD184234403B100BB648B /* ViewController.h */,
+				E8AFD185234403B100BB648B /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E8AFD1B4234410A200BB648B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD1B62344110E00BB648B /* APIClient.h */,
+				E8AFD1B72344110E00BB648B /* APIClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E8AFD1B5234410A800BB648B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD1B9234411D000BB648B /* Person.h */,
+				E8AFD1BA234411D000BB648B /* Person.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8AFD1AA234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-Digital" */;
 			buildPhases = (
+				9C94A792555526B3C385D8C9 /* [CP] Check Pods Manifest.lock */,
 				E8AFD17A234403B100BB648B /* Sources */,
 				E8AFD17B234403B100BB648B /* Frameworks */,
 				E8AFD17C234403B100BB648B /* Resources */,
+				C90EF01AF182CA6C4B953122 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8AFD1AD234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-DigitalTests" */;
 			buildPhases = (
+				D75781B3CD833ABE3A068C6B /* [CP] Check Pods Manifest.lock */,
 				E8AFD192234403B300BB648B /* Sources */,
 				E8AFD193234403B300BB648B /* Frameworks */,
 				E8AFD194234403B300BB648B /* Resources */,
@@ -174,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8AFD1B0234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-DigitalUITests" */;
 			buildPhases = (
+				7A391EEE740FE863B93F49F8 /* [CP] Check Pods Manifest.lock */,
 				E8AFD19D234403B300BB648B /* Sources */,
 				E8AFD19E234403B300BB648B /* Frameworks */,
 				E8AFD19F234403B300BB648B /* Resources */,
@@ -257,11 +335,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7A391EEE740FE863B93F49F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tekever-DigitalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C94A792555526B3C385D8C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tekever-Digital-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90EF01AF182CA6C4B953122 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tekever-Digital/Pods-Tekever-Digital-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tekever-Digital/Pods-Tekever-Digital-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tekever-Digital/Pods-Tekever-Digital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D75781B3CD833ABE3A068C6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tekever-DigitalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8AFD17A234403B100BB648B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8AFD1BB234411D000BB648B /* Person.m in Sources */,
+				E8AFD1B82344110E00BB648B /* APIClient.m in Sources */,
 				E8AFD186234403B100BB648B /* ViewController.m in Sources */,
 				E8AFD191234403B300BB648B /* main.m in Sources */,
 				E8AFD183234403B100BB648B /* AppDelegate.m in Sources */,
@@ -433,11 +599,13 @@
 		};
 		E8AFD1AB234403B300BB648B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DFDE8EF9629B04C5E76CB96 /* Pods-Tekever-Digital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MBW39N94XN;
 				INFOPLIST_FILE = "Tekever-Digital/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +618,13 @@
 		};
 		E8AFD1AC234403B300BB648B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EACD253ED6155D6A2CDFB00B /* Pods-Tekever-Digital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MBW39N94XN;
 				INFOPLIST_FILE = "Tekever-Digital/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +637,7 @@
 		};
 		E8AFD1AE234403B300BB648B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624D9FFD4D1979C7A64AD43E /* Pods-Tekever-DigitalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +657,7 @@
 		};
 		E8AFD1AF234403B300BB648B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C00ACD083763F6E1E01E77EE /* Pods-Tekever-DigitalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +677,7 @@
 		};
 		E8AFD1B1234403B300BB648B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730888FC9DBD1F04DA03A1CE /* Pods-Tekever-DigitalUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SACQADJ78B;
@@ -523,6 +696,7 @@
 		};
 		E8AFD1B2234403B300BB648B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63FDC62BAA5AB79BFD1EE8DB /* Pods-Tekever-DigitalUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SACQADJ78B;

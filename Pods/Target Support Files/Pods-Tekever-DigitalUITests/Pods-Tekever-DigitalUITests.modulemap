@@ -1,0 +1,6 @@
+framework module Pods_Tekever_DigitalUITests {
+  umbrella header "Pods-Tekever-DigitalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
