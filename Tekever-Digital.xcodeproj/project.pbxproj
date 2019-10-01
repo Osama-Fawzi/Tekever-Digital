@@ -436,13 +436,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SACQADJ78B;
+				DEVELOPMENT_TEAM = MBW39N94XN;
 				INFOPLIST_FILE = "Tekever-Digital/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-Digital";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tekever-Digital.Tekever-Digital";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,13 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SACQADJ78B;
+				DEVELOPMENT_TEAM = MBW39N94XN;
 				INFOPLIST_FILE = "Tekever-Digital/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-Digital";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tekever-Digital.Tekever-Digital";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
