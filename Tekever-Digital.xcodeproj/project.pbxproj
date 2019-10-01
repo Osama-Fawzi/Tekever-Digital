@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8AFD183234403B100BB648B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD182234403B100BB648B /* AppDelegate.m */; };
+		E8AFD186234403B100BB648B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD185234403B100BB648B /* ViewController.m */; };
+		E8AFD189234403B100BB648B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AFD187234403B100BB648B /* Main.storyboard */; };
+		E8AFD18B234403B300BB648B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AFD18A234403B300BB648B /* Assets.xcassets */; };
+		E8AFD18E234403B300BB648B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AFD18C234403B300BB648B /* LaunchScreen.storyboard */; };
+		E8AFD191234403B300BB648B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD190234403B300BB648B /* main.m */; };
+		E8AFD19B234403B300BB648B /* Tekever_DigitalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD19A234403B300BB648B /* Tekever_DigitalTests.m */; };
+		E8AFD1A6234403B300BB648B /* Tekever_DigitalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1A5234403B300BB648B /* Tekever_DigitalUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8AFD197234403B300BB648B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8AFD176234403B100BB648B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8AFD17D234403B100BB648B;
+			remoteInfo = "Tekever-Digital";
+		};
+		E8AFD1A2234403B300BB648B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8AFD176234403B100BB648B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8AFD17D234403B100BB648B;
+			remoteInfo = "Tekever-Digital";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E8AFD17E234403B100BB648B /* Tekever-Digital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tekever-Digital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AFD181234403B100BB648B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8AFD182234403B100BB648B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8AFD184234403B100BB648B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8AFD185234403B100BB648B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8AFD188234403B100BB648B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8AFD18A234403B300BB648B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8AFD18D234403B300BB648B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8AFD18F234403B300BB648B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8AFD190234403B300BB648B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8AFD196234403B300BB648B /* Tekever-DigitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tekever-DigitalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AFD19A234403B300BB648B /* Tekever_DigitalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tekever_DigitalTests.m; sourceTree = "<group>"; };
+		E8AFD19C234403B300BB648B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8AFD1A1234403B300BB648B /* Tekever-DigitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tekever-DigitalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AFD1A5234403B300BB648B /* Tekever_DigitalUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tekever_DigitalUITests.m; sourceTree = "<group>"; };
+		E8AFD1A7234403B300BB648B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8AFD17B234403B100BB648B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AFD193234403B300BB648B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AFD19E234403B300BB648B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8AFD175234403B100BB648B = {
+			isa = PBXGroup;
+			children = (
+				E8AFD180234403B100BB648B /* Tekever-Digital */,
+				E8AFD199234403B300BB648B /* Tekever-DigitalTests */,
+				E8AFD1A4234403B300BB648B /* Tekever-DigitalUITests */,
+				E8AFD17F234403B100BB648B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8AFD17F234403B100BB648B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD17E234403B100BB648B /* Tekever-Digital.app */,
+				E8AFD196234403B300BB648B /* Tekever-DigitalTests.xctest */,
+				E8AFD1A1234403B300BB648B /* Tekever-DigitalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8AFD180234403B100BB648B /* Tekever-Digital */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD181234403B100BB648B /* AppDelegate.h */,
+				E8AFD182234403B100BB648B /* AppDelegate.m */,
+				E8AFD184234403B100BB648B /* ViewController.h */,
+				E8AFD185234403B100BB648B /* ViewController.m */,
+				E8AFD187234403B100BB648B /* Main.storyboard */,
+				E8AFD18A234403B300BB648B /* Assets.xcassets */,
+				E8AFD18C234403B300BB648B /* LaunchScreen.storyboard */,
+				E8AFD18F234403B300BB648B /* Info.plist */,
+				E8AFD190234403B300BB648B /* main.m */,
+			);
+			path = "Tekever-Digital";
+			sourceTree = "<group>";
+		};
+		E8AFD199234403B300BB648B /* Tekever-DigitalTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD19A234403B300BB648B /* Tekever_DigitalTests.m */,
+				E8AFD19C234403B300BB648B /* Info.plist */,
+			);
+			path = "Tekever-DigitalTests";
+			sourceTree = "<group>";
+		};
+		E8AFD1A4234403B300BB648B /* Tekever-DigitalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD1A5234403B300BB648B /* Tekever_DigitalUITests.m */,
+				E8AFD1A7234403B300BB648B /* Info.plist */,
+			);
+			path = "Tekever-DigitalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8AFD17D234403B100BB648B /* Tekever-Digital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8AFD1AA234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-Digital" */;
+			buildPhases = (
+				E8AFD17A234403B100BB648B /* Sources */,
+				E8AFD17B234403B100BB648B /* Frameworks */,
+				E8AFD17C234403B100BB648B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tekever-Digital";
+			productName = "Tekever-Digital";
+			productReference = E8AFD17E234403B100BB648B /* Tekever-Digital.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8AFD195234403B300BB648B /* Tekever-DigitalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8AFD1AD234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-DigitalTests" */;
+			buildPhases = (
+				E8AFD192234403B300BB648B /* Sources */,
+				E8AFD193234403B300BB648B /* Frameworks */,
+				E8AFD194234403B300BB648B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8AFD198234403B300BB648B /* PBXTargetDependency */,
+			);
+			name = "Tekever-DigitalTests";
+			productName = "Tekever-DigitalTests";
+			productReference = E8AFD196234403B300BB648B /* Tekever-DigitalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8AFD1A0234403B300BB648B /* Tekever-DigitalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8AFD1B0234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-DigitalUITests" */;
+			buildPhases = (
+				E8AFD19D234403B300BB648B /* Sources */,
+				E8AFD19E234403B300BB648B /* Frameworks */,
+				E8AFD19F234403B300BB648B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8AFD1A3234403B300BB648B /* PBXTargetDependency */,
+			);
+			name = "Tekever-DigitalUITests";
+			productName = "Tekever-DigitalUITests";
+			productReference = E8AFD1A1234403B300BB648B /* Tekever-DigitalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8AFD176234403B100BB648B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Osama Fawzi";
+				TargetAttributes = {
+					E8AFD17D234403B100BB648B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E8AFD195234403B300BB648B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E8AFD17D234403B100BB648B;
+					};
+					E8AFD1A0234403B300BB648B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E8AFD17D234403B100BB648B;
+					};
+				};
+			};
+			buildConfigurationList = E8AFD179234403B100BB648B /* Build configuration list for PBXProject "Tekever-Digital" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8AFD175234403B100BB648B;
+			productRefGroup = E8AFD17F234403B100BB648B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8AFD17D234403B100BB648B /* Tekever-Digital */,
+				E8AFD195234403B300BB648B /* Tekever-DigitalTests */,
+				E8AFD1A0234403B300BB648B /* Tekever-DigitalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8AFD17C234403B100BB648B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AFD18E234403B300BB648B /* LaunchScreen.storyboard in Resources */,
+				E8AFD18B234403B300BB648B /* Assets.xcassets in Resources */,
+				E8AFD189234403B100BB648B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AFD194234403B300BB648B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AFD19F234403B300BB648B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8AFD17A234403B100BB648B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AFD186234403B100BB648B /* ViewController.m in Sources */,
+				E8AFD191234403B300BB648B /* main.m in Sources */,
+				E8AFD183234403B100BB648B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AFD192234403B300BB648B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AFD19B234403B300BB648B /* Tekever_DigitalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AFD19D234403B300BB648B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AFD1A6234403B300BB648B /* Tekever_DigitalUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8AFD198234403B300BB648B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8AFD17D234403B100BB648B /* Tekever-Digital */;
+			targetProxy = E8AFD197234403B300BB648B /* PBXContainerItemProxy */;
+		};
+		E8AFD1A3234403B300BB648B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8AFD17D234403B100BB648B /* Tekever-Digital */;
+			targetProxy = E8AFD1A2234403B300BB648B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8AFD187234403B100BB648B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8AFD188234403B100BB648B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8AFD18C234403B300BB648B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8AFD18D234403B300BB648B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8AFD1A8234403B300BB648B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E8AFD1A9234403B300BB648B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8AFD1AB234403B300BB648B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SACQADJ78B;
+				INFOPLIST_FILE = "Tekever-Digital/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-Digital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8AFD1AC234403B300BB648B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SACQADJ78B;
+				INFOPLIST_FILE = "Tekever-Digital/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-Digital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8AFD1AE234403B300BB648B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SACQADJ78B;
+				INFOPLIST_FILE = "Tekever-DigitalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-DigitalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tekever-Digital.app/Tekever-Digital";
+			};
+			name = Debug;
+		};
+		E8AFD1AF234403B300BB648B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SACQADJ78B;
+				INFOPLIST_FILE = "Tekever-DigitalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-DigitalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tekever-Digital.app/Tekever-Digital";
+			};
+			name = Release;
+		};
+		E8AFD1B1234403B300BB648B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SACQADJ78B;
+				INFOPLIST_FILE = "Tekever-DigitalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-DigitalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tekever-Digital";
+			};
+			name = Debug;
+		};
+		E8AFD1B2234403B300BB648B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SACQADJ78B;
+				INFOPLIST_FILE = "Tekever-DigitalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tekever-Digital.Tekever-DigitalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tekever-Digital";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8AFD179234403B100BB648B /* Build configuration list for PBXProject "Tekever-Digital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8AFD1A8234403B300BB648B /* Debug */,
+				E8AFD1A9234403B300BB648B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8AFD1AA234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-Digital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8AFD1AB234403B300BB648B /* Debug */,
+				E8AFD1AC234403B300BB648B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8AFD1AD234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-DigitalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8AFD1AE234403B300BB648B /* Debug */,
+				E8AFD1AF234403B300BB648B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8AFD1B0234403B300BB648B /* Build configuration list for PBXNativeTarget "Tekever-DigitalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8AFD1B1234403B300BB648B /* Debug */,
+				E8AFD1B2234403B300BB648B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8AFD176234403B100BB648B /* Project object */;
+}
