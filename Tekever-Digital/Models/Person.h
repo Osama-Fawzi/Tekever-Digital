@@ -12,19 +12,19 @@
 @interface Person : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, assign) NSString *height;
-@property (nonatomic, assign) NSString *mass;
-@property (nonatomic, assign) NSString *hair_color;
-@property (nonatomic, assign) NSString *skin_color;
-@property (nonatomic, assign) NSString *eye_color;
-@property (nonatomic, assign) NSString *birth_year;
+@property (nonatomic, strong) NSString *height;
+@property (nonatomic, strong) NSString *mass;
+@property (nonatomic, strong) NSString *hair_color;
+@property (nonatomic, strong) NSString *skin_color;
+@property (nonatomic, strong) NSString *eye_color;
+@property (nonatomic, strong) NSString *birth_year;
 @property (nonatomic, strong) NSString *gender;
-@property (nonatomic, assign) NSString *homeworld;
-@property (nonatomic, assign) NSArray  *films;
-@property (nonatomic, assign) NSArray *species;
-@property (nonatomic, assign) NSArray *vehicles;
-@property (nonatomic, assign) NSArray *starships;
-@property (nonatomic, assign) NSString *url;
+@property (nonatomic, strong) NSString *homeworld;
+@property (nonatomic, strong) NSArray  *films;
+@property (nonatomic, strong) NSArray *species;
+@property (nonatomic, strong) NSArray *vehicles;
+@property (nonatomic, strong) NSArray *starships;
+@property (nonatomic, strong) NSString *url;
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;
 

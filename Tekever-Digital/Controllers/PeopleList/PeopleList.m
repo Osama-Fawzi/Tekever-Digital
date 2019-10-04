@@ -41,7 +41,7 @@ int page = 1;
 }
 
 - (void)reload:(__unused id)sender {
-    self.navigationItem.rightBarButtonItem.enabled = NO;
+    self.people = [NSMutableArray array];
     page = 1;
     [self fetchpersons];
     
