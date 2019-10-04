@@ -10,7 +10,6 @@
 #import "APIClient.h"
 
 @implementation Person
-
 - (instancetype)initWithAttributes:(NSDictionary *)attributes {
     self = [super init];
     if (!self) {

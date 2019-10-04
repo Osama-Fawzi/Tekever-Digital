@@ -11,16 +11,16 @@
 
 @interface Person : NSObject
 
-@property (nonatomic, assign) NSString *name;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) NSString *height;
 @property (nonatomic, assign) NSString *mass;
 @property (nonatomic, assign) NSString *hair_color;
 @property (nonatomic, assign) NSString *skin_color;
 @property (nonatomic, assign) NSString *eye_color;
 @property (nonatomic, assign) NSString *birth_year;
-@property (nonatomic, assign) NSString *gender;
+@property (nonatomic, strong) NSString *gender;
 @property (nonatomic, assign) NSString *homeworld;
-@property (nonatomic, assign) NSArray *films;
+@property (nonatomic, assign) NSArray  *films;
 @property (nonatomic, assign) NSArray *species;
 @property (nonatomic, assign) NSArray *vehicles;
 @property (nonatomic, assign) NSArray *starships;

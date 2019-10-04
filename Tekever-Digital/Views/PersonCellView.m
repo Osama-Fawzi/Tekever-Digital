@@ -32,12 +32,13 @@
 - (void)setPerson:(Person *)person {
     _person = person;
 
-//    self.textLabel.text = _person.name;
+
 //    NSLog(_person.name);
+    NSString *s = _person.name;
 //    if (!_person.name) {
-//        self.name.text = _person.name ;
+        self.name.text = s ;
 //    }
-//    self.gender.text = _person.gender;
+    self.gender.text = _person.gender;
     self.birthDay.text = _person.birth_year;
     self.height.text = _person.height;
     self.weight.text = _person.mass;

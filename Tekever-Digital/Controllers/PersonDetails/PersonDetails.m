@@ -35,12 +35,12 @@ UIBarButtonItem *favButton;
      action:@selector(addtofav:)];
     self.navigationItem.rightBarButtonItem = favButton;
 
-//    if (person.name){
-//        self.navigationItem.title = person.name;
-//    }
-//    if (person.gender){
-//        gender.text = person.gender;
-//    }
+    if (person.name){
+        self.navigationItem.title = person.name;
+    }
+    if (person.gender){
+        gender.text = person.gender;
+    }
     birthDay.text = person.birth_year;
     eyeColor.text = person.eye_color;
     hairColor.text = person.hair_color;
