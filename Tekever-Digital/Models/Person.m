@@ -16,8 +16,6 @@
     if (!self) {
         return nil;
     }
-    
-//    self.name = (NSUInteger)[[attributes valueForKeyPath:@"name"] integerValue];
     self.name = [attributes valueForKeyPath:@"name"];
     self.height = [attributes valueForKeyPath:@"height"];
     self.mass = [attributes valueForKeyPath:@"mass"];
@@ -30,31 +28,43 @@
     self.species = [attributes valueForKeyPath:@"species"];
     self.vehicles = [attributes valueForKeyPath:@"vehicles"];
     self.starships = [attributes valueForKeyPath:@"starships"];
-
-//    self.films = (NSArray)[[attributes valueForKeyPath:@"films"] array];
-
-    
+    self.url = [attributes valueForKeyPath:@"url"];
     
     return self;
 }
 
 #pragma mark -
 
-+ (NSURLSessionDataTask *)fetchPersons:(void(^)(NSArray *posts, NSError *error))block {
-    return [[APIClient sharedClient] GET:@"people/?page=1" parameters:nil progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
-        NSArray *postsFromResponse = [JSON valueForKeyPath:@"results"];
-        NSMutableArray *mutablePosts = [NSMutableArray arrayWithCapacity:[postsFromResponse count]];
-        for (NSDictionary *attributes in postsFromResponse) {
++ (NSURLSessionDataTask *)fetchPersons: (int)page : (void(^)(NSMutableArray *persons, NSError *error))block {
+    NSString *prefix = [NSString stringWithFormat:@"people/?page=%d", page];
+    
+    return [[APIClient sharedClient] GET:prefix parameters:nil progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
+        NSArray *PersonsFromResponse = [JSON valueForKeyPath:@"results"];
+        NSMutableArray *mutablePosts = [NSMutableArray arrayWithCapacity:[PersonsFromResponse count]];
+        for (NSDictionary *attributes in PersonsFromResponse) {
             Person *person = [[Person alloc] initWithAttributes:attributes];
             [mutablePosts addObject:person];
         }
 
         if (block) {
-            block([NSArray arrayWithArray:mutablePosts], nil);
+            block([NSMutableArray arrayWithArray:mutablePosts], nil);
         }
     } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
         if (block) {
-            block([NSArray array], error);
+            block([NSMutableArray array], error);
+        }
+    }];
+}
+
++ (NSURLSessionDataTask *)addToFavorite :(NSString*)url: (void(^)(NSError *error))block {
+    NSDictionary *params = @{@"Person URL": url};
+    return [[APIClient WebhookClient] POST:@"" parameters:params progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
+        if (block) {
+            block(nil);
+        }
+    } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
+        if (block) {
+            block( error);
         }
     }];
 }
@@ -64,7 +74,6 @@
 @implementation Person (NSCoding)
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-//    [aCoder encodeInteger:(NSInteger)self.postID forKey:@"AF.postID"];
     [aCoder encodeObject:self.name forKey:@"AF.name"];
     [aCoder encodeObject:self.height forKey:@"AF.height"];
     [aCoder encodeObject:self.mass forKey:@"AF.mass"];
@@ -78,6 +87,7 @@
     [aCoder encodeObject:self.species forKey:@"AF.species"];
     [aCoder encodeObject:self.vehicles forKey:@"AF.vehicles"];
     [aCoder encodeObject:self.starships forKey:@"AF.starships"];
+    [aCoder encodeObject:self.url forKey:@"AF.url"];
 
 
 }
@@ -100,6 +110,7 @@
     self.species = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"AF.species"];
     self.vehicles = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"AF.vehicles"];
     self.starships = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"AF.starships"];
+    self.url = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"AF.url"];
     return self;
 }
 

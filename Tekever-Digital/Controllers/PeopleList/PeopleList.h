@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PeopleList.h
 //  Tekever-Digital
 //
 //  Created by Osama Fawzi on 10/2/19.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PeopleList : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
-
-
+@property (readwrite, nonatomic, strong) NSMutableArray *people;
 
 @end
 

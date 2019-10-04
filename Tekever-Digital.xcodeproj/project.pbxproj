@@ -10,15 +10,20 @@
 		4483A49625902B98283DC1B7 /* Pods_Tekever_DigitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BEA98F2D86D5FF398F5158 /* Pods_Tekever_DigitalTests.framework */; };
 		7AA69FCE603BE8D298F2D6CB /* Pods_Tekever_DigitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6AC98606A3059CB61F9FB2 /* Pods_Tekever_DigitalUITests.framework */; };
 		E8AFD183234403B100BB648B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD182234403B100BB648B /* AppDelegate.m */; };
-		E8AFD186234403B100BB648B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD185234403B100BB648B /* ViewController.m */; };
+		E8AFD186234403B100BB648B /* PeopleList.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD185234403B100BB648B /* PeopleList.m */; };
 		E8AFD189234403B100BB648B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AFD187234403B100BB648B /* Main.storyboard */; };
-		E8AFD18B234403B300BB648B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AFD18A234403B300BB648B /* Assets.xcassets */; };
-		E8AFD18E234403B300BB648B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AFD18C234403B300BB648B /* LaunchScreen.storyboard */; };
 		E8AFD191234403B300BB648B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD190234403B300BB648B /* main.m */; };
 		E8AFD19B234403B300BB648B /* Tekever_DigitalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD19A234403B300BB648B /* Tekever_DigitalTests.m */; };
 		E8AFD1A6234403B300BB648B /* Tekever_DigitalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1A5234403B300BB648B /* Tekever_DigitalUITests.m */; };
 		E8AFD1B82344110E00BB648B /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1B72344110E00BB648B /* APIClient.m */; };
 		E8AFD1BB234411D000BB648B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1BA234411D000BB648B /* Person.m */; };
+		E8AFD1BF23466BD500BB648B /* PersonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1BD23466BD500BB648B /* PersonCellView.m */; };
+		E8AFD1C12347497900BB648B /* PeopleList.h in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD184234403B100BB648B /* PeopleList.h */; };
+		E8AFD1C22347498100BB648B /* Person.h in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1B9234411D000BB648B /* Person.h */; };
+		E8AFD1C32347498500BB648B /* PersonCellView.h in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1C023473CCA00BB648B /* PersonCellView.h */; };
+		E8AFD1C42347498C00BB648B /* APIClient.h in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1B62344110E00BB648B /* APIClient.h */; };
+		E8AFD1C92347DF6C00BB648B /* PersonDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1C72347DF6C00BB648B /* PersonDetails.m */; };
+		E8AFD1CA2347E03000BB648B /* PersonDetails.h in Sources */ = {isa = PBXBuildFile; fileRef = E8AFD1C82347DF6C00BB648B /* PersonDetails.h */; };
 		EC8FDC3BCF393BE43E879967 /* Pods_Tekever_Digital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339BFF1ABDD964BD43A02935 /* Pods_Tekever_Digital.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,11 +56,9 @@
 		E8AFD17E234403B100BB648B /* Tekever-Digital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tekever-Digital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AFD181234403B100BB648B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8AFD182234403B100BB648B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E8AFD184234403B100BB648B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E8AFD185234403B100BB648B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8AFD184234403B100BB648B /* PeopleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleList.h; sourceTree = "<group>"; };
+		E8AFD185234403B100BB648B /* PeopleList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleList.m; sourceTree = "<group>"; };
 		E8AFD188234403B100BB648B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8AFD18A234403B300BB648B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8AFD18D234403B300BB648B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8AFD18F234403B300BB648B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8AFD190234403B300BB648B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8AFD196234403B300BB648B /* Tekever-DigitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tekever-DigitalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +71,10 @@
 		E8AFD1B72344110E00BB648B /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		E8AFD1B9234411D000BB648B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		E8AFD1BA234411D000BB648B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E8AFD1BD23466BD500BB648B /* PersonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCellView.m; sourceTree = "<group>"; };
+		E8AFD1C023473CCA00BB648B /* PersonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCellView.h; sourceTree = "<group>"; };
+		E8AFD1C72347DF6C00BB648B /* PersonDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetails.m; sourceTree = "<group>"; };
+		E8AFD1C82347DF6C00BB648B /* PersonDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetails.h; sourceTree = "<group>"; };
 		EACD253ED6155D6A2CDFB00B /* Pods-Tekever-Digital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tekever-Digital.release.xcconfig"; path = "Target Support Files/Pods-Tekever-Digital/Pods-Tekever-Digital.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,16 +154,13 @@
 		E8AFD180234403B100BB648B /* Tekever-Digital */ = {
 			isa = PBXGroup;
 			children = (
+				E8AFD1CC2347EA5D00BB648B /* Storyboard */,
+				E8AFD1CB2347EA5300BB648B /* Delegates */,
+				E8AFD1BC2346691700BB648B /* Views */,
 				E8AFD1B5234410A800BB648B /* Models */,
 				E8AFD1B4234410A200BB648B /* Network */,
 				E8AFD1B32344106C00BB648B /* Controllers */,
-				E8AFD181234403B100BB648B /* AppDelegate.h */,
-				E8AFD182234403B100BB648B /* AppDelegate.m */,
-				E8AFD187234403B100BB648B /* Main.storyboard */,
-				E8AFD18A234403B300BB648B /* Assets.xcassets */,
-				E8AFD18C234403B300BB648B /* LaunchScreen.storyboard */,
 				E8AFD18F234403B300BB648B /* Info.plist */,
-				E8AFD190234403B300BB648B /* main.m */,
 			);
 			path = "Tekever-Digital";
 			sourceTree = "<group>";
@@ -182,8 +186,8 @@
 		E8AFD1B32344106C00BB648B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E8AFD184234403B100BB648B /* ViewController.h */,
-				E8AFD185234403B100BB648B /* ViewController.m */,
+				E8AFD1C62347DF1100BB648B /* PersonDetails */,
+				E8AFD1C52347DF0A00BB648B /* PeopleList */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +208,51 @@
 				E8AFD1BA234411D000BB648B /* Person.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E8AFD1BC2346691700BB648B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD1C023473CCA00BB648B /* PersonCellView.h */,
+				E8AFD1BD23466BD500BB648B /* PersonCellView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8AFD1C52347DF0A00BB648B /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD184234403B100BB648B /* PeopleList.h */,
+				E8AFD185234403B100BB648B /* PeopleList.m */,
+			);
+			path = PeopleList;
+			sourceTree = "<group>";
+		};
+		E8AFD1C62347DF1100BB648B /* PersonDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD1C82347DF6C00BB648B /* PersonDetails.h */,
+				E8AFD1C72347DF6C00BB648B /* PersonDetails.m */,
+			);
+			path = PersonDetails;
+			sourceTree = "<group>";
+		};
+		E8AFD1CB2347EA5300BB648B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD181234403B100BB648B /* AppDelegate.h */,
+				E8AFD182234403B100BB648B /* AppDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		E8AFD1CC2347EA5D00BB648B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFD190234403B300BB648B /* main.m */,
+				E8AFD187234403B100BB648B /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,8 +362,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8AFD18E234403B300BB648B /* LaunchScreen.storyboard in Resources */,
-				E8AFD18B234403B300BB648B /* Assets.xcassets in Resources */,
 				E8AFD189234403B100BB648B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,9 +473,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8AFD1CA2347E03000BB648B /* PersonDetails.h in Sources */,
+				E8AFD1C92347DF6C00BB648B /* PersonDetails.m in Sources */,
+				E8AFD1C42347498C00BB648B /* APIClient.h in Sources */,
+				E8AFD1C32347498500BB648B /* PersonCellView.h in Sources */,
+				E8AFD1C22347498100BB648B /* Person.h in Sources */,
+				E8AFD1C12347497900BB648B /* PeopleList.h in Sources */,
+				E8AFD1BF23466BD500BB648B /* PersonCellView.m in Sources */,
 				E8AFD1BB234411D000BB648B /* Person.m in Sources */,
 				E8AFD1B82344110E00BB648B /* APIClient.m in Sources */,
-				E8AFD186234403B100BB648B /* ViewController.m in Sources */,
+				E8AFD186234403B100BB648B /* PeopleList.m in Sources */,
 				E8AFD191234403B300BB648B /* main.m in Sources */,
 				E8AFD183234403B100BB648B /* AppDelegate.m in Sources */,
 			);
@@ -472,14 +526,6 @@
 				E8AFD188234403B100BB648B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E8AFD18C234403B300BB648B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8AFD18D234403B300BB648B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

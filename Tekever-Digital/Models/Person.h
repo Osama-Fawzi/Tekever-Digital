@@ -9,8 +9,6 @@
 
 #import <Foundation/Foundation.h>
 
-//@class User;
-
 @interface Person : NSObject
 
 @property (nonatomic, assign) NSString *name;
@@ -26,14 +24,15 @@
 @property (nonatomic, assign) NSArray *species;
 @property (nonatomic, assign) NSArray *vehicles;
 @property (nonatomic, assign) NSArray *starships;
-
-//@property (nonatomic, strong) User *user;
+@property (nonatomic, assign) NSString *url;
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;
 
-+ (NSURLSessionDataTask *)fetchPersons:(void (^)(NSArray *persons, NSError *error))block;
++ (NSURLSessionDataTask *)fetchPersons: (int)page: (void (^)(NSArray *persons, NSError *error))block;
+
++ (NSURLSessionDataTask *)addToFavorite: (NSString*)url: (void (^)( NSError *error))block;
+
 
 @end
 
-@interface Person (NSCoding) <NSSecureCoding>
-@end
+

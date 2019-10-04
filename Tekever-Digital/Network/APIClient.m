@@ -8,7 +8,9 @@
 
 #import "APIClient.h"
 
-static NSString * const AFAppDotNetAPIBaseURLString = @"https://swapi.co/api/";
+static NSString * const APIBaseURLString = @"https://swapi.co/api/";
+static NSString * const webHook = @"http://webhook.site/cab420db-f17b-4fb6-b569-d2ed93bce525";
+
 
 @implementation APIClient
 
@@ -16,7 +18,19 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"https://swapi.co/api/";
     static APIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[APIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
+        _sharedClient = [[APIClient alloc] initWithBaseURL:[NSURL URLWithString:APIBaseURLString]];
+        _sharedClient.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+    });
+    
+    return _sharedClient;
+}
+
+
++ (instancetype)WebhookClient{
+    static APIClient *_sharedClient = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedClient = [[APIClient alloc] initWithBaseURL:[NSURL URLWithString:webHook]];
         _sharedClient.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     });
     

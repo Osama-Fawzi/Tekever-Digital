@@ -13,5 +13,7 @@
 @interface APIClient : AFHTTPSessionManager
 
 + (instancetype)sharedClient;
++ (instancetype)WebhookClient;
 
 @end
+
