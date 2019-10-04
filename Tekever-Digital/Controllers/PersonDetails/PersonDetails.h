@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *skinColor;
 @property (weak, nonatomic) IBOutlet UILabel *eyeColor;
 @property (readwrite, nonatomic, strong) Person *person;
+
 @end
 

@@ -11,6 +11,8 @@
 @interface PeopleList : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (readwrite, nonatomic, strong) NSMutableArray *people;
+@property (readwrite, nonatomic, strong) NSMutableArray *searchResult;
+@property (strong, nonatomic) UISearchController *searchController;
 
 @end
 

@@ -19,16 +19,28 @@
 
 
 @implementation PeopleList
-@synthesize tableview,people;
+@synthesize tableview,people,searchController,searchResult;
 int page = 1;
+bool pagingenabled = true;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self configsearch];
     [self setuptableView];
+}
+
+- (void)configsearch {
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.searchResultsUpdater = self;
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    self.searchController.searchBar.delegate = self;
+    self.definesPresentationContext = YES;
 }
 
 -(void) setuptableView {
     self.navigationItem.title = @"People List";
     self.people = [NSMutableArray array];
+    self.searchResult = [NSMutableArray array];
     if (@available(iOS 10.0, *)) {
         tableview.refreshControl = [[UIRefreshControl alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableview.frame.size.width, 100.0f)];
         [tableview.refreshControl addTarget:self action:@selector(reload:) forControlEvents:UIControlEventValueChanged];
@@ -38,10 +50,30 @@ int page = 1;
     }
     self.tableview.rowHeight = 70.0f;
     [self reload:nil];
+    self.tableview.tableHeaderView = self.searchController.searchBar;
+}
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
+{
+    NSString *text = searchController.searchBar.text;
+    NSPredicate *resultPredicate = [NSPredicate
+                                    predicateWithFormat:@"name CONTAINS %@",
+                                    text];
+    if ( text && text.length > 0) {
+        pagingenabled = false;
+        searchResult = [people filteredArrayUsingPredicate:resultPredicate];
+
+    }else{
+        pagingenabled = true;
+        searchResult = people;
+    }    
+    [self.tableview reloadData];
+
 }
 
 - (void)reload:(__unused id)sender {
     self.people = [NSMutableArray array];
+    self.searchResult = [NSMutableArray array];
     page = 1;
     [self fetchpersons];
     
@@ -53,6 +85,7 @@ int page = 1;
         if (!error) {
             for(int i = 0; i < persons.count; i++) {
                 [self.people addObject:persons[i]];
+                [self.searchResult addObject:persons[i]];
             }
             [self.tableview reloadData];
         }else{
@@ -74,7 +107,7 @@ int page = 1;
 - (NSInteger)tableView:(__unused UITableView *)tableView
  numberOfRowsInSection:(__unused NSInteger)section
 {
-    return (NSInteger)[self.people count];
+    return (NSInteger)[self.searchResult count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -87,10 +120,12 @@ int page = 1;
         cell = [[PersonCellView alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
 
-    cell.person = self.people[(NSUInteger)indexPath.row];
-    if (indexPath.row >= (self.people.count-5)){
-        page += 1;
-        [self fetchpersons];
+    cell.person = self.searchResult[(NSUInteger)indexPath.row];
+    if(pagingenabled){
+            if (indexPath.row >= (self.searchResult.count-5)){
+                page += 1;
+                [self fetchpersons];
+            }
     }
     return cell;
 }
@@ -100,7 +135,7 @@ int page = 1;
 - (CGFloat)tableView:(__unused UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [PersonCellView heightForCellWithPerson:self.people[(NSUInteger)indexPath.row]];
+    return [PersonCellView heightForCellWithPerson:self.searchResult[(NSUInteger)indexPath.row]];
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -117,7 +152,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     {
         PersonDetails *vc = [segue destinationViewController];
         NSIndexPath *indexPath = (NSIndexPath *)sender;
-        vc.person = self.people[indexPath.row];
+        vc.person = self.searchResult[indexPath.row];
     }
 }
 
